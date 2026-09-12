@@ -26,7 +26,13 @@ An ethical fashion eCommerce website and subscription box service for **Sydney S
 sydney-sock-co/
 ├── assets/
 │   ├── images/
-│   │   └── hero.jpg
+│   │   ├── hero.jpg
+│   │   ├── koala-crew.jpg
+│   │   ├── sunset-merino.jpg
+│   │   ├── bondi-cushion.jpg
+│   │   ├── roo-boot.jpg
+│   │   ├── surry-hills.jpg
+│   │   └── cockatoo-ankle.jpg
 │   └── svgs/
 │       ├── logo.svg
 │       └── icons.svg
@@ -41,6 +47,7 @@ sydney-sock-co/
 │   └── subscription.js
 ├── tests/
 │   └── runner.js
+├── config.json
 ├── index.html
 ├── package.json
 └── README.md

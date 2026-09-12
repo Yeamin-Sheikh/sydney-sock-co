@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <svg class="icon" style="color:#F43F5E; width:14px; height:14px;"><use href="assets/svgs/icons.svg#icon-heart"></use></svg>
               ${sock.impact}
             </span>
-            <div style="font-size: 3.5rem;">🧦</div>
+            <img src="assets/images/${sock.image}" alt="${sock.title}" class="sock-card-img" loading="lazy">
           </div>
           <div class="sock-card-body">
             <span class="sock-category">${sock.category}</span>
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const itemPrice = currency.convert(item.basePriceAUD);
           return `
             <div class="cart-item-row" data-key="${item.itemKey}">
-              <div style="font-size: 1.8rem; background:#F5F5F4; border-radius:8px; width:48px; height:48px; display:flex; align-items:center; justify-content:center;">🧦</div>
+              <img src="assets/images/${item.image || 'koala-crew.jpg'}" alt="${item.title}" style="width:48px; height:48px; object-fit:cover; border-radius:8px; border:1px solid #E7E5E4;">
               <div style="flex-grow:1;">
                 <div style="font-size:0.9rem; font-weight:700;">${item.title}</div>
                 <div style="font-size:0.8rem; color:#78716C;">Size: ${item.size} &bull; ${item.material}</div>
@@ -256,5 +256,53 @@ document.addEventListener('DOMContentLoaded', () => {
     modalOverlay?.classList.remove('open');
     checkoutModal?.classList.remove('open');
     showToast(`Order Confirmed! Reference #${orderId}. Thank you for your ethical donation!`);
+  });
+
+  // Right-Click Context Menu Implementation (User Rule Compliance)
+  const contextMenu = document.getElementById('custom-context-menu');
+  window.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    if (!contextMenu) return;
+    contextMenu.style.left = `${Math.min(e.clientX, window.innerWidth - 180)}px`;
+    contextMenu.style.top = `${Math.min(e.clientY, window.innerHeight - 180)}px`;
+    contextMenu.classList.add('open');
+  });
+
+  window.addEventListener('click', () => {
+    contextMenu?.classList.remove('open');
+  });
+
+  contextMenu?.addEventListener('click', async (e) => {
+    const item = e.target.closest('.context-menu-item');
+    if (!item) return;
+    const action = item.getAttribute('data-action');
+    try {
+      if (action === 'copy') {
+        const sel = window.getSelection()?.toString();
+        if (sel) await navigator.clipboard.writeText(sel);
+      } else if (action === 'paste') {
+        const text = await navigator.clipboard.readText();
+        const active = document.activeElement;
+        if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA')) {
+          active.value += text;
+        }
+      } else if (action === 'cut') {
+        const active = document.activeElement;
+        if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA')) {
+          await navigator.clipboard.writeText(active.value);
+          active.value = '';
+        }
+      } else if (action === 'selectall') {
+        const active = document.activeElement;
+        if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA')) {
+          active.select();
+        } else {
+          document.execCommand('selectAll');
+        }
+      }
+    } catch {
+      // Clipboard fallback
+    }
+    contextMenu.classList.remove('open');
   });
 });

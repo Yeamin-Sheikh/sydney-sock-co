@@ -12,6 +12,7 @@ export const socksData = [
     impact: '1 Hot Meal to Sydney Homeless',
     badge: 'Sydney Bestseller',
     color: '#0D9488',
+    image: 'koala-crew.jpg',
     description: 'Ultra-soft antibacterial combed bamboo featuring sleeping sleepy koalas amongst native gum leaves and yellow wattle.',
     availableSizes: ['S/M (US 6-9)', 'M/L (US 9-12)']
   },
@@ -24,6 +25,7 @@ export const socksData = [
     impact: '1 Pair Warm Socks Donated',
     badge: 'Premium Wool',
     color: '#F97316',
+    image: 'sunset-merino.jpg',
     description: 'Fine 19.5-micron non-mulesed Australian Merino wool reflecting golden hour reflections across the Sydney Harbour waters.',
     availableSizes: ['S/M (US 6-9)', 'M/L (US 9-12)', 'XL (US 13+)']
   },
@@ -36,6 +38,7 @@ export const socksData = [
     impact: '1 Pair Warm Socks Donated',
     badge: 'Trail Tested',
     color: '#0284C7',
+    image: 'bondi-cushion.jpg',
     description: 'Reinforced heel and toe padding with dynamic arch support for the scenic Bondi to Coogee coastal walk.',
     availableSizes: ['S/M (US 6-9)', 'M/L (US 9-12)', 'XL (US 13+)']
   },
@@ -48,6 +51,7 @@ export const socksData = [
     impact: '1 Hot Meal to Sydney Homeless',
     badge: 'Heavy Duty',
     color: '#B45309',
+    image: 'roo-boot.jpg',
     description: 'Thermal insulating loop-knit Merino sock designed for Blundstones, Redbacks, and rugged Australian conditions.',
     availableSizes: ['M/L (US 9-12)', 'XL (US 13+)']
   },
@@ -60,6 +64,7 @@ export const socksData = [
     impact: '1 Pair Warm Socks Donated',
     badge: 'Boardroom Ready',
     color: '#334155',
+    image: 'surry-hills.jpg',
     description: 'Classic bespoke houndstooth knit with hand-linked seamless toes for zero friction inside dress brogues.',
     availableSizes: ['S/M (US 6-9)', 'M/L (US 9-12)']
   },
@@ -72,6 +77,7 @@ export const socksData = [
     impact: '1 Hot Meal to Sydney Homeless',
     badge: 'Summer Essential',
     color: '#F59E0B',
+    image: 'cockatoo-ankle.jpg',
     description: 'Breathable no-slip silicone heel grip with playful yellow cockatoo crest embroidery on the tab.',
     availableSizes: ['S/M (US 6-9)', 'M/L (US 9-12)']
   }

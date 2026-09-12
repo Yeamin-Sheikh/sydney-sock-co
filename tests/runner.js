@@ -17,12 +17,16 @@ global.localStorage = (() => {
   };
 })();
 
-// Test 1: Product catalog integrity
+// Test 1: Product catalog integrity and image assets
 assert.strictEqual(socksData.length, 6, 'Should have 6 sock products');
 const koala = socksData.find(s => s.id === 'syd-koala-crew');
 assert.ok(koala);
 assert.strictEqual(koala.basePriceAUD, 18.00);
-console.log('✓ Product catalog verified');
+socksData.forEach(s => {
+  assert.ok(s.image, `Product ${s.id} must have an image property`);
+  assert.ok(typeof s.image === 'string' && s.image.endsWith('.jpg'), `Product ${s.id} image must be a .jpg`);
+});
+console.log('✓ Product catalog and image assets verified');
 
 // Test 2: Multi-currency conversion
 const curr = new CurrencyManager();

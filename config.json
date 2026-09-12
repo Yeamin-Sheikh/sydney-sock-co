@@ -1,0 +1,17 @@
+{
+  "storeName": "Sydney Sock Co",
+  "location": "Surry Hills, Sydney, NSW 2010, Australia",
+  "defaultCurrency": "AUD",
+  "freeShippingThresholdAUD": 50.00,
+  "supportedCurrencies": ["AUD", "USD", "GBP", "EUR"],
+  "contact": {
+    "email": "hello@sydneysockco.com.au",
+    "phone": "+61 2 9211 4000",
+    "hours": "Mon-Fri 9am-5pm AEST"
+  },
+  "donationProgram": {
+    "enabled": true,
+    "model": "One pair purchased = One pair / hot meal donated",
+    "localPartners": ["Sydney Homeless Connect", "Rough Edges Darlinghurst"]
+  }
+}

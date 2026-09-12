@@ -44,6 +44,7 @@ export class SockCartManager {
         size,
         material: product.material,
         impact: product.impact,
+        image: product.image || 'koala-crew.jpg',
         quantity
       });
     }
