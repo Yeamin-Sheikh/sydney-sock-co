@@ -38,49 +38,173 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ClothingStore",
-    "@id": "https://yeamin-sheikh.github.io/sydney-sock-co/#store",
-    "name": "Sydney Sock Co.",
-    "image": "https://yeamin-sheikh.github.io/sydney-sock-co/assets/images/hero.jpg",
-    "logo": "https://yeamin-sheikh.github.io/sydney-sock-co/assets/svgs/logo.svg",
-    "telephone": "+61-2-9358-1290",
-    "email": "hello@sydneysockco.com.au",
-    "url": "https://yeamin-sheikh.github.io/sydney-sock-co/",
-    "priceRange": "$$",
-    "currenciesAccepted": "AUD, USD, EUR, GBP",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "42 Crown Street",
-      "addressLocality": "Surry Hills",
-      "addressRegion": "NSW",
-      "postalCode": "2010",
-      "addressCountry": "AU"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -33.8821,
-      "longitude": 151.2155
-    },
-    "openingHoursSpecification": [
+    "@graph": [
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "09:30",
-        "closes": "17:30"
+        "@type": "ClothingStore",
+        "@id": "https://yeamin-sheikh.github.io/sydney-sock-co/#store",
+        "name": "Sydney Sock Co.",
+        "image": "https://yeamin-sheikh.github.io/sydney-sock-co/assets/images/hero.jpg",
+        "logo": "https://yeamin-sheikh.github.io/sydney-sock-co/assets/svgs/logo.svg",
+        "telephone": "+61-2-9358-1290",
+        "email": "hello@sydneysockco.com.au",
+        "url": "https://yeamin-sheikh.github.io/sydney-sock-co/",
+        "priceRange": "$$",
+        "currenciesAccepted": "AUD, USD, EUR, GBP",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "42 Crown Street",
+          "addressLocality": "Surry Hills",
+          "addressRegion": "NSW",
+          "postalCode": "2010",
+          "addressCountry": "AU"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -33.8821,
+          "longitude": 151.2155
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:30",
+            "closes": "17:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "10:00",
+            "closes": "16:00"
+          }
+        ],
+        "areaServed": ["Sydney", "New South Wales", "Australia", "International"],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.92",
+          "reviewCount": "312"
+        }
       },
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "10:00",
-        "closes": "16:00"
+        "@type": "Product",
+        "name": "The Koala Canopy crew",
+        "image": "https://yeamin-sheikh.github.io/sydney-sock-co/assets/images/koala-crew.jpg",
+        "description": "Combed organic bamboo and merino blend with native botanical wattle blooms and seamless toe linking.",
+        "sku": "SYD-KOALA-CREW",
+        "brand": {
+          "@type": "Brand",
+          "name": "Sydney Sock Co."
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "28.00",
+          "priceCurrency": "AUD",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://yeamin-sheikh.github.io/sydney-sock-co/#store"
+          }
+        }
+      },
+      {
+        "@type": "Product",
+        "name": "The Bondi Breeze ankle",
+        "image": "https://yeamin-sheikh.github.io/sydney-sock-co/assets/images/bondi-ankle.jpg",
+        "description": "Lightweight breathable mesh upper with targeted arch support and padded Achilles tab for running and gym workouts.",
+        "sku": "SYD-BONDI-ANKLE",
+        "brand": {
+          "@type": "Brand",
+          "name": "Sydney Sock Co."
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "24.00",
+          "priceCurrency": "AUD",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://yeamin-sheikh.github.io/sydney-sock-co/#store"
+          }
+        }
+      },
+      {
+        "@type": "Product",
+        "name": "The Blue Mountains Hiker",
+        "image": "https://yeamin-sheikh.github.io/sydney-sock-co/assets/images/mountains-hiker.jpg",
+        "description": "Heavy-duty 19.5-micron Australian merino wool with dense terry loop cushioning and graduated ankle compression.",
+        "sku": "SYD-BM-HIKER",
+        "brand": {
+          "@type": "Brand",
+          "name": "Sydney Sock Co."
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "32.00",
+          "priceCurrency": "AUD",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://yeamin-sheikh.github.io/sydney-sock-co/#store"
+          }
+        }
+      },
+      {
+        "@type": "Product",
+        "name": "The Barossa Merino dress",
+        "image": "https://yeamin-sheikh.github.io/sydney-sock-co/assets/images/barossa-dress.jpg",
+        "description": "Ultra-fine gauge non-mulesed merino wool knit with hand-linked flat toe seams for boardroom wear and dress shoes.",
+        "sku": "SYD-BAROSSA-DRESS",
+        "brand": {
+          "@type": "Brand",
+          "name": "Sydney Sock Co."
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "26.00",
+          "priceCurrency": "AUD",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://yeamin-sheikh.github.io/sydney-sock-co/#store"
+          }
+        }
+      },
+      {
+        "@type": "Product",
+        "name": "The Sydney Harbour Sneaker tab",
+        "image": "https://yeamin-sheikh.github.io/sydney-sock-co/assets/images/harbour-sneaker.jpg",
+        "description": "Low-profile hidden cut with silicone heel grip to eliminate slip-down and breathable instep ventilation.",
+        "sku": "SYD-HARBOUR-SNEAKER",
+        "brand": {
+          "@type": "Brand",
+          "name": "Sydney Sock Co."
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "24.00",
+          "priceCurrency": "AUD",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://yeamin-sheikh.github.io/sydney-sock-co/#store"
+          }
+        }
+      },
+      {
+        "@type": "Product",
+        "name": "The Outback Workhorse boot",
+        "image": "https://yeamin-sheikh.github.io/sydney-sock-co/assets/images/outback-workhorse.jpg",
+        "description": "Reinforced Cordura heel and toe matrix built for trade work boots, farm use, and rough field duty.",
+        "sku": "SYD-OUTBACK-BOOT",
+        "brand": {
+          "@type": "Brand",
+          "name": "Sydney Sock Co."
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "34.00",
+          "priceCurrency": "AUD",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://yeamin-sheikh.github.io/sydney-sock-co/#store"
+          }
+        }
       }
-    ],
-    "areaServed": ["Sydney", "New South Wales", "Australia", "International"],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.92",
-      "reviewCount": "312"
-    }
+    ]
   }
   </script>
 </head>
@@ -392,7 +516,7 @@
         </div>
         <div>
           <span class="section-tag">Pure Australian Wool</span>
-          <h2 class="section-title" style="text-align: left; margin-top: 0.5rem;">Why 19.5-Micron Merino Outperforms Synthetic Blends</h2>
+          <h2 class="section-title" style="text-align: left; margin-top: 0.5rem;">Why 19.5-micron merino outperforms synthetic blends</h2>
           <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.5rem;">
             Unlike petroleum-based polyesters or cheap synthetics, natural Merino fibers regulate body temperature dynamically: cooling your feet in humid Sydney summers and holding heat during chilly Southern Highlands mornings. Natural lanolin naturally repels odor-causing bacteria so your socks stay fresh after 14 hours of continuous wear.
           </p>
@@ -407,6 +531,41 @@
   </section>
 
   <!-- Footer -->
+
+  <!-- Ethical Guarantees and Return Policy -->
+  <section class="section" style="background: white; border-top: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Shop With Confidence</span>
+        <h2 class="section-title">100-day comfort guarantee and free returns</h2>
+        <p class="section-subtitle">Every order supports New South Wales community shelters and comes backed by our durability warranty.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+        <div style="background: var(--bg-main); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+          <h3 style="margin-bottom: 0.5rem; color: var(--primary);">100-day comfort trial</h3>
+          <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.92rem;">
+            Try your socks on the trail, at work, or at home. Complete refund or exchange within 100 days if not completely satisfied.
+          </p>
+        </div>
+
+        <div style="background: var(--bg-main); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+          <h3 style="margin-bottom: 0.5rem; color: var(--primary);">12-month hole-free guarantee</h3>
+          <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.92rem;">
+            Free replacement if your socks develop a hole within one year of normal wear and washing according to our care guide.
+          </p>
+        </div>
+
+        <div style="background: var(--bg-main); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+          <h3 style="margin-bottom: 0.5rem; color: var(--primary);">Prepaid Australia Post returns</h3>
+          <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.92rem;">
+            Prepaid return satchels provided for all domestic orders. Zero hassle returns sent back to our Surry Hills studio.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   </main>
 
   <footer class="site-footer">
@@ -441,7 +600,7 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Sydney Store & Studio</h4>
+          <h4>Sydney store and studio</h4>
           <ul class="footer-links">
             <li><span style="font-size:0.85rem;">42 Crown St, Surry Hills NSW 2010</span></li>
             <li><span style="font-size:0.85rem;">Mon - Sat: 9:30 AM  to  5:30 PM</span></li>
@@ -468,7 +627,7 @@
     </div>
 
     <div class="cart-header">
-      <h3 style="font-size: 1.15rem; font-weight: 800;">Your Sock Drawer</h3>
+      <h3 style="font-size: 1.15rem; font-weight: 800;">Your sock drawer</h3>
       <button id="close-cart-btn" style="border:none; background:none; font-size:1.5rem; cursor:pointer;">&times;</button>
     </div>
 
@@ -500,7 +659,7 @@
   <!-- Size Guide Modal -->
   <div id="size-modal" class="modal-box">
     <button class="modal-close">&times;</button>
-    <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.5rem;">Sydney Sock Co Size Guide</h3>
+    <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.5rem;">Sydney Sock Co size guide</h3>
     <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Find your perfect fit across Australian, US, UK, and European standards.</p>
     <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem;">
       <thead>
@@ -541,7 +700,7 @@
   <!-- Checkout Modal -->
   <div id="checkout-modal" class="modal-box">
     <button class="modal-close">&times;</button>
-    <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.5rem;">Fast Aussie Checkout</h3>
+    <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.5rem;">Fast Aussie checkout</h3>
     <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Shipped in 100% home compostable mailers via Australia Post.</p>
     <form id="checkout-form">
       <div style="margin-bottom: 1rem;">
