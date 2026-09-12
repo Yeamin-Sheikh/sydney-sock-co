@@ -1,0 +1,21 @@
+{
+  "name": "sydney-sock-co",
+  "version": "1.0.0",
+  "description": "eCommerce store for ethically crafted Australian Merino wool and bamboo socks based in Sydney, Australia",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/runner.js",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "sydney",
+    "australia",
+    "socks",
+    "ecommerce",
+    "merino-wool",
+    "bamboo",
+    "ethical-fashion"
+  ],
+  "author": "Yeamin Sheikh <yeaminsheikh12@gmail.com>",
+  "license": "MIT"
+}

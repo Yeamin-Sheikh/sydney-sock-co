@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" fill="none">
+  <defs>
+    <linearGradient id="syd-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0D9488" />
+    </linearGradient>
+  </defs>
+  <!-- Sydney Opera Sails & Sock Emblem -->
+  <g transform="translate(8, 7)">
+    <rect x="0" y="0" width="50" height="50" rx="14" fill="url(#syd-grad)" />
+    <!-- Opera House Style Sails Motif -->
+    <path d="M12 36 C16 22 24 16 26 16 C28 24 30 30 32 36 Z" fill="#FFFFFF" opacity="0.9" />
+    <path d="M22 36 C26 25 33 20 35 20 C36 27 38 31 39 36 Z" fill="#E0F2FE" opacity="0.75" />
+    <!-- Sock Toe Curve -->
+    <path d="M10 36 C10 38 13 40 18 40 L34 40 C37 40 40 38 40 36 Z" fill="#FDE047" />
+  </g>
+  <!-- Typography -->
+  <text x="68" y="28" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="800" font-size="20" fill="#0F172A" letter-spacing="0.5">SYDNEY</text>
+  <text x="156" y="28" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="800" font-size="20" fill="#0D9488" letter-spacing="0.5">SOCK CO</text>
+  <text x="68" y="47" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="9.5" fill="#64748B" letter-spacing="2">SYDNEY, NSW &bull; ETHICAL MERINO &bull; EST. 2017</text>
+</svg>

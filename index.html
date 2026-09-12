@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sydney Sock Co | Ethical Australian Merino & Bamboo Socks</title>
+  <meta name="description" content="Sustainably crafted Australian Merino wool and organic bamboo socks. Every pair bought donates a pair of warm socks or a hot meal to Sydney shelters. Surry Hills, Sydney NSW.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <!-- Impact Banner -->
+  <div class="impact-ribbon">
+    <div class="impact-stats">
+      <span class="impact-badge">Our Sydney Impact</span>
+      <span>184,200+ Pairs of Warm Socks & Meals Donated to Sydney Community Shelters</span>
+      <span style="opacity: 0.8;">&bull; 1 Pair Bought = 1 Donated</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#hero" class="brand-logo">
+          <img src="assets/svgs/logo.svg" alt="Sydney Sock Co" height="46">
+        </a>
+        <ul class="nav-links">
+          <li><a href="#catalog" class="nav-link">Socks Catalog</a></li>
+          <li><a href="#subscription" class="nav-link">Sock Subscription</a></li>
+          <li><a href="#impact" class="nav-link">Ethical Mission</a></li>
+          <li><a href="#size-guide" id="open-size-guide-btn" class="nav-link" style="cursor: pointer;">Size Guide</a></li>
+        </ul>
+        <div class="nav-actions">
+          <select id="currency-select" class="currency-select" title="Change currency">
+            <option value="AUD">AUD ($)</option>
+            <option value="USD">USD ($)</option>
+            <option value="EUR">EUR (&euro;)</option>
+            <option value="GBP">GBP (&pound;)</option>
+          </select>
+          <button id="cart-trigger" class="cart-btn" title="View Cart">
+            <svg class="icon"><use href="assets/svgs/icons.svg#icon-cart"></use></svg>
+            <span id="cart-badge" class="cart-badge">0</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <svg class="icon" style="width:16px; height:16px; color:#0284C7;"><use href="assets/svgs/icons.svg#icon-leaf"></use></svg>
+          100% Ethical Australian Materials
+        </div>
+        <h1 class="hero-title">Step Into Unrivalled Comfort. <span class="teal-text">Give Back to Sydney.</span></h1>
+        <p class="hero-desc">
+          Crafted from ultra-fine 19.5-micron Australian Merino wool and organic bamboo. Breathable, blister-free, and guaranteed to spark joy on morning walks along Bondi or daily commutes.
+        </p>
+        <div class="hero-badges">
+          <div class="hero-badge-pill">
+            <svg class="icon" style="color: #0D9488;"><use href="assets/svgs/icons.svg#icon-kangaroo"></use></svg>
+            Designed in Sydney, NSW
+          </div>
+          <div class="hero-badge-pill">
+            <svg class="icon" style="color: #F43F5E;"><use href="assets/svgs/icons.svg#icon-heart"></use></svg>
+            1 Pair Bought = 1 Donated
+          </div>
+          <div class="hero-badge-pill">
+            <svg class="icon" style="color: #0284C7;"><use href="assets/svgs/icons.svg#icon-truck"></use></svg>
+            Free Express Post Over $60 AUD
+          </div>
+        </div>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#catalog" class="btn btn-teal">Shop The Range</a>
+          <a href="#subscription" class="btn btn-outline">Build Sock Box</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="catalog" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Signature Collection</span>
+        <h2 class="section-title">The Sydney Heritage Range</h2>
+        <p class="section-subtitle">
+          Engineered with arch support bands, hand-linked seamless toes, and double-knit heels for long days on your feet.
+        </p>
+      </div>
+      <div id="products-grid" class="products-grid"></div>
+    </div>
+  </section>
+
+  <!-- Subscription Builder -->
+  <section id="subscription" class="section section-warm">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Never Run Out</span>
+        <h2 class="section-title">Build Your Sydney Sock Subscription Box</h2>
+        <p class="section-subtitle">
+          Delivered fresh to your doorstep every month. Cancel, pause, or switch styles whenever you like.
+        </p>
+      </div>
+
+      <div class="sub-builder-card">
+        <div>
+          <div class="sub-step">
+            <h4>Step 1: Choose Pair Count</h4>
+            <div class="tier-options">
+              <div class="tier-card" data-pairs="2">
+                <strong>2 Pairs</strong>
+                <span>Save 10%</span>
+              </div>
+              <div class="tier-card active" data-pairs="3">
+                <strong>3 Pairs</strong>
+                <span>Most Popular &bull; Save 15%</span>
+              </div>
+              <div class="tier-card" data-pairs="4">
+                <strong>4 Pairs</strong>
+                <span>Save 20%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-step">
+            <h4>Step 2: Choose Style Aesthetic</h4>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+              <div style="padding: 1rem; border: 1px solid var(--border-color); border-radius: 8px; text-align: center; background: white;">
+                <strong>Aussie Flora & Fauna</strong>
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Koalas, Kangaroos, Cockatoos</p>
+              </div>
+              <div style="padding: 1rem; border: 1px solid var(--border-color); border-radius: 8px; text-align: center; background: white;">
+                <strong>Executive Classic</strong>
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Houndstooth, Stripes, Solids</p>
+              </div>
+              <div style="padding: 1rem; border: 1px solid var(--border-color); border-radius: 8px; text-align: center; background: white;">
+                <strong>Surprise Mix</strong>
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Curated Seasonal Rotation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-summary-box">
+          <span style="font-weight: 700; color: var(--primary); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Subscription Rate</span>
+          <div class="sub-price-tag" id="sub-price-display">$45.00 AUD</div>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+            Includes 3 pairs of socks + 3 hot meals donated to Sydney shelters each month. Free Australian delivery included.
+          </p>
+          <button class="btn btn-teal" style="width: 100%;" onclick="document.getElementById('checkout-modal').classList.add('open'); document.getElementById('modal-overlay').classList.add('open');">
+            Subscribe Now & Save 15%
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ethical Mission & Impact -->
+  <section id="impact" class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center;">
+        <div>
+          <span class="section-tag">Community Purpose</span>
+          <h2 class="section-title" style="text-align: left;">Socks Are The Most Requested Item in Homeless Shelters</h2>
+          <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.7;">
+            When we launched Sydney Sock Co in Surry Hills, we discovered that fresh, clean socks and warm meals are rarely donated to community missions. We partnered directly with local Sydney outreach hubs to establish a strict 1-for-1 giveback promise.
+          </p>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem;">
+            <div style="background: var(--bg-subtle); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border-color);">
+              <h3 style="font-size: 2rem; color: var(--primary); font-weight: 900;">184,200+</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Pairs donated across Sydney</p>
+            </div>
+            <div style="background: var(--bg-subtle); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border-color);">
+              <h3 style="font-size: 2rem; color: var(--ocean); font-weight: 900;">100%</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Plastic-free compostable mailers</p>
+            </div>
+          </div>
+        </div>
+        <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-lg);">
+          <img src="assets/images/hero.jpg" alt="Sydney Sock Co Australian Merino Wool" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/svgs/logo.svg" alt="Sydney Sock Co" height="42" style="margin-bottom: 1.25rem;">
+          <p style="font-size: 0.9rem; line-height: 1.7; max-width: 320px;">
+            Ethically knit socks crafted from fine Australian Merino wool and organic bamboo. Proudly rooted in Sydney, New South Wales.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Sock Collections</h4>
+          <ul class="footer-links">
+            <li><a href="#catalog">The Koala Canopy Crew</a></li>
+            <li><a href="#catalog">Sydney Harbour Sunset Merino</a></li>
+            <li><a href="#catalog">Bondi Trail Athletic Socks</a></li>
+            <li><a href="#catalog">Red Earth Kangaroo Boot Socks</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Social Mission</h4>
+          <ul class="footer-links">
+            <li><a href="#impact">Sydney Shelter Giving Program</a></li>
+            <li><a href="#impact">Non-Mulesed Australian Merino</a></li>
+            <li><a href="#impact">Compostable Packaging</a></li>
+            <li><a href="#subscription">Monthly Box Club</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Sydney Store & Studio</h4>
+          <ul class="footer-links">
+            <li><span style="font-size:0.85rem;">Surry Hills, Sydney NSW 2010</span></li>
+            <li><span style="font-size:0.85rem;">Email: hello@sydneysockco.com.au</span></li>
+            <li><span style="font-size:0.85rem;">ABN: 48 620 914 832</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Sydney Sock Co. All rights reserved. Made for Australian feet.</div>
+        <div>Free express shipping on all orders over $60 AUD.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-over Cart Drawer -->
+  <div id="cart-overlay" class="cart-overlay"></div>
+  <aside id="cart-drawer" class="cart-drawer">
+    <div class="cart-shipping-bar">
+      <div id="shipping-notice">Add <strong>$60.00 AUD</strong> more for Free Shipping!</div>
+      <div class="progress-track">
+        <div id="shipping-progress-bar" class="progress-fill" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <div class="cart-header">
+      <h3 style="font-size: 1.15rem; font-weight: 800;">Your Sock Drawer</h3>
+      <button id="close-cart-btn" style="border:none; background:none; font-size:1.5rem; cursor:pointer;">&times;</button>
+    </div>
+
+    <div id="cart-items-list" class="cart-items"></div>
+
+    <div class="cart-footer">
+      <div style="background: #F0FDFA; border: 1px solid #99F6E4; border-radius: 8px; padding: 0.75rem; margin-bottom: 1rem; font-size: 0.85rem; color: #0F766E; display: flex; align-items: center; gap: 0.5rem;">
+        <svg class="icon" style="color: #F43F5E; width:16px; height:16px;"><use href="assets/svgs/icons.svg#icon-heart"></use></svg>
+        <span>This order will donate <strong id="impact-count">0</strong> items to Sydney homeless missions!</span>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">$0.00 AUD</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 1.25rem;">
+        <span>Total</span>
+        <span id="cart-total">$0.00 AUD</span>
+      </div>
+      <button id="checkout-btn" class="btn btn-teal" style="width: 100%;">
+        Proceed to Checkout
+      </button>
+    </div>
+  </aside>
+
+  <!-- Modal Overlay -->
+  <div id="modal-overlay" class="modal-overlay"></div>
+
+  <!-- Size Guide Modal -->
+  <div id="size-modal" class="modal-box" style="display: none; position: fixed; z-index: 301;">
+    <button class="modal-close">&times;</button>
+    <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.5rem;">Sydney Sock Co Size Guide</h3>
+    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Find your perfect fit across Australian, US, UK, and European standards.</p>
+    <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem;">
+      <thead>
+        <tr style="border-bottom: 2px solid var(--border-color); background: var(--bg-subtle);">
+          <th style="padding: 0.75rem;">Size</th>
+          <th style="padding: 0.75rem;">AU / UK</th>
+          <th style="padding: 0.75rem;">US Men</th>
+          <th style="padding: 0.75rem;">US Women</th>
+          <th style="padding: 0.75rem;">EU</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid var(--border-color);">
+          <td style="padding: 0.75rem; font-weight: 700;">S / M</td>
+          <td style="padding: 0.75rem;">4 &ndash; 8</td>
+          <td style="padding: 0.75rem;">5 &ndash; 8.5</td>
+          <td style="padding: 0.75rem;">6 &ndash; 9.5</td>
+          <td style="padding: 0.75rem;">36 &ndash; 41</td>
+        </tr>
+        <tr style="border-bottom: 1px solid var(--border-color);">
+          <td style="padding: 0.75rem; font-weight: 700;">M / L</td>
+          <td style="padding: 0.75rem;">8 &ndash; 11.5</td>
+          <td style="padding: 0.75rem;">9 &ndash; 12.5</td>
+          <td style="padding: 0.75rem;">10 &ndash; 13.5</td>
+          <td style="padding: 0.75rem;">42 &ndash; 46</td>
+        </tr>
+        <tr>
+          <td style="padding: 0.75rem; font-weight: 700;">XL</td>
+          <td style="padding: 0.75rem;">12 &ndash; 15</td>
+          <td style="padding: 0.75rem;">13 &ndash; 16</td>
+          <td style="padding: 0.75rem;">14+</td>
+          <td style="padding: 0.75rem;">47 &ndash; 50</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div id="checkout-modal" class="modal-box" style="display: none; position: fixed; z-index: 301;">
+    <button class="modal-close">&times;</button>
+    <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.5rem;">Fast Aussie Checkout</h3>
+    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Shipped in 100% home compostable mailers via Australia Post.</p>
+    <form id="checkout-form">
+      <div style="margin-bottom: 1rem;">
+        <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.35rem;">Full Name</label>
+        <input type="text" style="width:100%; padding:0.75rem; border:1px solid var(--border-color); border-radius:6px;" placeholder="Matilda Lawson" required>
+      </div>
+      <div style="margin-bottom: 1rem;">
+        <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.35rem;">Email Address</label>
+        <input type="email" style="width:100%; padding:0.75rem; border:1px solid var(--border-color); border-radius:6px;" placeholder="matilda@sydney.com.au" required>
+      </div>
+      <div style="margin-bottom: 1.5rem;">
+        <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.35rem;">Postal Delivery Address</label>
+        <input type="text" style="width:100%; padding:0.75rem; border:1px solid var(--border-color); border-radius:6px;" placeholder="42 Crown St, Surry Hills NSW 2010" required>
+      </div>
+      <button type="submit" class="btn btn-teal" style="width: 100%;">Place Order & Donate</button>
+    </form>
+  </div>
+
+  <div style="display: none;">
+    <object id="svg-sprite-holder" data="assets/svgs/icons.svg" type="image/svg+xml"></object>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
