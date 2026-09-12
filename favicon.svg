@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="syd-ico-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0D9488" />
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="10" fill="url(#syd-ico-grad)" />
+  <g transform="translate(4, 4) scale(0.8)">
+    <path d="M12 36 C16 22 24 16 26 16 C28 24 30 30 32 36 Z" fill="#FFFFFF" opacity="0.9" />
+    <path d="M22 36 C26 25 33 20 35 20 C36 27 38 31 39 36 Z" fill="#E0F2FE" opacity="0.75" />
+    <path d="M10 36 C10 38 13 40 18 40 L34 40 C37 40 40 38 40 36 Z" fill="#FDE047" />
+  </g>
+</svg>

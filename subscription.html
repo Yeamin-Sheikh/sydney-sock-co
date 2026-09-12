@@ -3,13 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Sydney Sock Club | Monthly Sock Subscription Box</title>
-  <meta name="description" content="Join the Sydney Sock Club. Get fresh Australian Merino and organic bamboo socks delivered monthly. Save 15-20% plus 1 pair donated to Sydney shelters with every box.">
+  <title>Sock Subscription Club | Sydney Sock Co.</title>
+  <meta name="description" content="Subscribe for fresh pairs of Australian merino wool socks delivered monthly or quarterly. Every box donates matching pairs to Sydney homeless shelters.">
+  <meta name="keywords" content="sock subscription Australia, monthly sock box, merino sock club, gift sock subscription Sydney">
+  <meta name="author" content="Sydney Sock Co.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yeamin-sheikh.github.io/sydney-sock-co/subscription.html">
+  <meta name="theme-color" content="#0d9488">
+  <meta name="color-scheme" content="light">
+
+  <!-- Favicon and Touch Icons -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Sydney Sock Co.">
+  <meta property="og:title" content="Sock Subscription Club | Sydney Sock Co.">
+  <meta property="og:description" content="Subscribe for fresh pairs of Australian merino wool socks delivered monthly or quarterly. Every box donates matching pairs to Sydney homeless shelters.">
+  <meta property="og:url" content="https://yeamin-sheikh.github.io/sydney-sock-co/subscription.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://yeamin-sheikh.github.io/sydney-sock-co/assets/images/subscription-box.jpg">
+  <meta property="og:locale" content="en_AU">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sock Subscription Club | Sydney Sock Co.">
+  <meta name="twitter:description" content="Subscribe for fresh pairs of Australian merino wool socks delivered monthly or quarterly. Every box donates matching pairs to Sydney homeless shelters.">
+  <meta name="twitter:image" content="https://yeamin-sheikh.github.io/sydney-sock-co/assets/images/subscription-box.jpg">
+
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/components.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "@id": "https://yeamin-sheikh.github.io/sydney-sock-co/#store",
+    "name": "Sydney Sock Co.",
+    "image": "https://yeamin-sheikh.github.io/sydney-sock-co/assets/images/hero.jpg",
+    "logo": "https://yeamin-sheikh.github.io/sydney-sock-co/assets/svgs/logo.svg",
+    "telephone": "+61-2-9358-1290",
+    "email": "hello@sydneysockco.com.au",
+    "url": "https://yeamin-sheikh.github.io/sydney-sock-co/",
+    "priceRange": "$$",
+    "currenciesAccepted": "AUD, USD, EUR, GBP",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "42 Crown Street",
+      "addressLocality": "Surry Hills",
+      "addressRegion": "NSW",
+      "postalCode": "2010",
+      "addressCountry": "AU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -33.8821,
+      "longitude": 151.2155
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:30",
+        "closes": "17:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "10:00",
+        "closes": "16:00"
+      }
+    ],
+    "areaServed": ["Sydney", "New South Wales", "Australia", "International"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.92",
+      "reviewCount": "312"
+    }
+  }
+  </script>
 </head>
 <body>
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;" aria-hidden="true">
   <symbol id="icon-sock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M7 3h7v8l4 4a4 4 0 0 1-5.66 5.66l-5.34-5.34V3z"></path>
     <path d="M7 8h7"></path>
@@ -86,7 +163,7 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container">
-      <nav class="navbar">
+      <nav class="navbar" aria-label="Primary navigation">
         <a href="index.html" class="brand-logo">
           <img src="assets/svgs/logo.svg" alt="Sydney Sock Co" height="46">
         </a>
@@ -100,10 +177,10 @@
         </ul>
         <div class="nav-actions">
           <select id="currency-select" class="currency-select" title="Change currency">
-            <option value="AUD">AUD ($)</option>
-            <option value="USD">USD ($)</option>
-            <option value="EUR">EUR (&euro;)</option>
-            <option value="GBP">GBP (&pound;)</option>
+            <option value="AUD">AUD $</option>
+            <option value="USD">USD $</option>
+            <option value="EUR">EUR &euro;</option>
+            <option value="GBP">GBP &pound;</option>
           </select>
           <button id="cart-trigger" class="cart-btn" title="View Cart">
             <svg class="icon" style="width:20px;height:20px;"><use href="#icon-cart"></use></svg>
@@ -114,20 +191,22 @@
     </div>
   </header>
 
+  <main id="main-content">
+
   <!-- Subscription Hero Banner with Content Picture (1 picture) -->
   <section style="background: linear-gradient(rgba(4,47,46,0.9), rgba(4,47,46,0.9)); padding: 4rem 0; color: white; border-bottom: 1px solid var(--border-color);">
     <div class="container">
       <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; align-items: center;">
         <div>
           <span class="impact-badge" style="margin-bottom: 1rem; display: inline-block;">Monthly Sock Box Club</span>
-          <h1 style="font-size: 3rem; font-weight: 900; margin-bottom: 1rem;">Fresh Socks. Maximum Comfort. Guaranteed Impact.</h1>
+          <h1 style="font-size: 3rem; font-weight: 900; margin-bottom: 1rem;">Monthly sock delivery and shelter donations</h1>
           <p style="font-size: 1.15rem; color: #CCFBF1; margin-bottom: 1.5rem; line-height: 1.7;">
             Delivered directly to your door in 100% home compostable kraft mailers. Every monthly box donates equal pairs or hot meals to Sydney shelters.
           </p>
           <div style="display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.95rem; font-weight: 700;">
-            <span class="hero-badge-pill" style="color: var(--text-main);">✓ Save Up to 20%</span>
-            <span class="hero-badge-pill" style="color: var(--text-main);">✓ Free Express Shipping</span>
-            <span class="hero-badge-pill" style="color: var(--text-main);">✓ Pause or Cancel Anytime</span>
+            <span class="hero-badge-pill" style="color: var(--text-main);"><svg class="icon" aria-hidden="true" style="width:14px;height:14px;color:var(--primary);margin-right:4px;"><use href="#icon-check"></use></svg>Save Up to 20%</span>
+            <span class="hero-badge-pill" style="color: var(--text-main);"><svg class="icon" aria-hidden="true" style="width:14px;height:14px;color:var(--primary);margin-right:4px;"><use href="#icon-check"></use></svg>Free Express Shipping</span>
+            <span class="hero-badge-pill" style="color: var(--text-main);"><svg class="icon" aria-hidden="true" style="width:14px;height:14px;color:var(--primary);margin-right:4px;"><use href="#icon-check"></use></svg>Pause or Cancel Anytime</span>
           </div>
         </div>
         <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); border: 2px solid rgba(255,255,255,0.2);">
@@ -142,7 +221,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Configure Your Box</span>
-        <h2 class="section-title">Build Your Sydney Sock Subscription</h2>
+        <h2 class="section-title">Build your Sydney sock subscription</h2>
         <p class="section-subtitle">
           Select your desired pair count and aesthetic theme. You can swap styles or adjust frequency anytime from your account.
         </p>
@@ -151,7 +230,7 @@
       <div class="sub-builder-card">
         <div>
           <div class="sub-step">
-            <h4>Step 1: Choose Monthly Pair Count</h4>
+            <h4>Step 1: Choose monthly pair count</h4>
             <div class="tier-options">
               <div class="tier-card" data-pairs="2">
                 <strong>2 Pairs</strong>
@@ -169,7 +248,7 @@
           </div>
 
           <div class="sub-step">
-            <h4>Step 2: Choose Style Aesthetic</h4>
+            <h4>Step 2: Choose style aesthetic</h4>
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
               <div style="padding: 1.25rem; border: 2px solid var(--primary); border-radius: 8px; text-align: center; background: white; cursor: pointer;">
                 <strong>Aussie Flora & Fauna</strong>
@@ -206,7 +285,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Previous Editions</span>
-        <h2 class="section-title">What Club Members Received in Recent Boxes</h2>
+        <h2 class="section-title">What club members received in recent boxes</h2>
         <p class="section-subtitle">
           Every month features a fresh mix of non-mulesed Merino wool and organic bamboo socks crafted for the current Sydney season.
         </p>
@@ -217,7 +296,7 @@
           <img src="assets/images/koala-crew.jpg" alt="Month 1 Koala Canopy Crew" style="width: 100%; height: 240px; object-fit: cover; display: block;">
           <div style="padding: 1.25rem;">
             <span style="font-size: 0.8rem; font-weight: 700; color: var(--primary); text-transform: uppercase;">Box Month 1</span>
-            <h4 style="font-size: 1.15rem; margin-top: 4px;">The Koala Canopy Crew</h4>
+            <h4 style="font-size: 1.15rem; margin-top: 4px;">The Koala Canopy crew</h4>
             <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 6px;">Combed organic bamboo with native wattle blooms and gentle ribbing.</p>
           </div>
         </div>
@@ -226,7 +305,7 @@
           <img src="assets/images/sunset-merino.jpg" alt="Month 2 Sydney Harbour Sunset Gradient" style="width: 100%; height: 240px; object-fit: cover; display: block;">
           <div style="padding: 1.25rem;">
             <span style="font-size: 0.8rem; font-weight: 700; color: var(--primary); text-transform: uppercase;">Box Month 2</span>
-            <h4 style="font-size: 1.15rem; margin-top: 4px;">Sydney Harbour Sunset Gradient</h4>
+            <h4 style="font-size: 1.15rem; margin-top: 4px;">Sydney Harbour sunset gradient</h4>
             <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 6px;">19.5-micron fine Australian Merino wool inspired by sunset over Port Jackson.</p>
           </div>
         </div>
@@ -235,7 +314,7 @@
           <img src="assets/images/cockatoo-ankle.jpg" alt="Month 3 Sulphur-Crested Cockatoo Ankle" style="width: 100%; height: 240px; object-fit: cover; display: block;">
           <div style="padding: 1.25rem;">
             <span style="font-size: 0.8rem; font-weight: 700; color: var(--primary); text-transform: uppercase;">Box Month 3</span>
-            <h4 style="font-size: 1.15rem; margin-top: 4px;">Sulphur-Crested Cockatoo Ankle</h4>
+            <h4 style="font-size: 1.15rem; margin-top: 4px;">Sulphur-crested cockatoo ankle</h4>
             <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 6px;">Summer athletic cut with silicone anti-slip heel grip and iconic yellow crest.</p>
           </div>
         </div>
@@ -270,6 +349,8 @@
   </section>
 
   <!-- Footer -->
+  </main>
+
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -293,7 +374,7 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Giving Mission</h4>
+          <h4>Giving mission</h4>
           <ul class="footer-links">
             <li><a href="about.html#impact">Sydney Shelter Partnership</a></li>
             <li><a href="about.html#merino">Non-Mulesed Australian Merino</a></li>
@@ -305,7 +386,7 @@
           <h4>Sydney Store & Studio</h4>
           <ul class="footer-links">
             <li><span style="font-size:0.85rem;">42 Crown St, Surry Hills NSW 2010</span></li>
-            <li><span style="font-size:0.85rem;">Mon - Sat: 9:30 AM &ndash; 5:30 PM</span></li>
+            <li><span style="font-size:0.85rem;">Mon - Sat: 9:30 AM  to  5:30 PM</span></li>
             <li><span style="font-size:0.85rem;">Email: hello@sydneysockco.com.au</span></li>
             <li><span style="font-size:0.85rem;">ABN: 48 620 914 832</span></li>
           </ul>
@@ -376,24 +457,24 @@
       <tbody>
         <tr style="border-bottom: 1px solid var(--border-color);">
           <td style="padding: 0.75rem; font-weight: 700;">S / M</td>
-          <td style="padding: 0.75rem;">4 &ndash; 8</td>
-          <td style="padding: 0.75rem;">5 &ndash; 8.5</td>
-          <td style="padding: 0.75rem;">6 &ndash; 9.5</td>
-          <td style="padding: 0.75rem;">36 &ndash; 41</td>
+          <td style="padding: 0.75rem;">4  to  8</td>
+          <td style="padding: 0.75rem;">5  to  8.5</td>
+          <td style="padding: 0.75rem;">6  to  9.5</td>
+          <td style="padding: 0.75rem;">36  to  41</td>
         </tr>
         <tr style="border-bottom: 1px solid var(--border-color);">
           <td style="padding: 0.75rem; font-weight: 700;">M / L</td>
-          <td style="padding: 0.75rem;">8 &ndash; 11.5</td>
-          <td style="padding: 0.75rem;">9 &ndash; 12.5</td>
-          <td style="padding: 0.75rem;">10 &ndash; 13.5</td>
-          <td style="padding: 0.75rem;">42 &ndash; 46</td>
+          <td style="padding: 0.75rem;">8  to  11.5</td>
+          <td style="padding: 0.75rem;">9  to  12.5</td>
+          <td style="padding: 0.75rem;">10  to  13.5</td>
+          <td style="padding: 0.75rem;">42  to  46</td>
         </tr>
         <tr>
           <td style="padding: 0.75rem; font-weight: 700;">XL</td>
-          <td style="padding: 0.75rem;">12 &ndash; 15</td>
-          <td style="padding: 0.75rem;">13 &ndash; 16</td>
+          <td style="padding: 0.75rem;">12  to  15</td>
+          <td style="padding: 0.75rem;">13  to  16</td>
           <td style="padding: 0.75rem;">14+</td>
-          <td style="padding: 0.75rem;">47 &ndash; 50</td>
+          <td style="padding: 0.75rem;">47  to  50</td>
         </tr>
       </tbody>
     </table>

@@ -3,13 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sydney Sock Co | Ethical Australian Merino & Bamboo Socks</title>
-  <meta name="description" content="Sustainably crafted Australian Merino wool and organic bamboo socks. Every pair bought donates a pair of warm socks or a hot meal to Sydney shelters. Surry Hills, Sydney NSW.">
+  <title>Sydney Sock Co. | Ethical Australian Merino Wool Socks</title>
+  <meta name="description" content="Australian merino wool socks ethically knitted in Sydney. For every pair purchased, we donate a pair to local shelters across New South Wales.">
+  <meta name="keywords" content="Australian merino wool socks, ethical socks Sydney, buy one donate one socks, Surry Hills apparel, Australian made socks">
+  <meta name="author" content="Sydney Sock Co.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yeamin-sheikh.github.io/sydney-sock-co/">
+  <meta name="theme-color" content="#0d9488">
+  <meta name="color-scheme" content="light">
+
+  <!-- Favicon and Touch Icons -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Sydney Sock Co.">
+  <meta property="og:title" content="Sydney Sock Co. | Ethical Australian Merino Wool Socks">
+  <meta property="og:description" content="Australian merino wool socks ethically knitted in Sydney. For every pair purchased, we donate a pair to local shelters across New South Wales.">
+  <meta property="og:url" content="https://yeamin-sheikh.github.io/sydney-sock-co/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://yeamin-sheikh.github.io/sydney-sock-co/assets/images/hero.jpg">
+  <meta property="og:locale" content="en_AU">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sydney Sock Co. | Ethical Australian Merino Wool Socks">
+  <meta name="twitter:description" content="Australian merino wool socks ethically knitted in Sydney. For every pair purchased, we donate a pair to local shelters across New South Wales.">
+  <meta name="twitter:image" content="https://yeamin-sheikh.github.io/sydney-sock-co/assets/images/hero.jpg">
+
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/components.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "@id": "https://yeamin-sheikh.github.io/sydney-sock-co/#store",
+    "name": "Sydney Sock Co.",
+    "image": "https://yeamin-sheikh.github.io/sydney-sock-co/assets/images/hero.jpg",
+    "logo": "https://yeamin-sheikh.github.io/sydney-sock-co/assets/svgs/logo.svg",
+    "telephone": "+61-2-9358-1290",
+    "email": "hello@sydneysockco.com.au",
+    "url": "https://yeamin-sheikh.github.io/sydney-sock-co/",
+    "priceRange": "$$",
+    "currenciesAccepted": "AUD, USD, EUR, GBP",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "42 Crown Street",
+      "addressLocality": "Surry Hills",
+      "addressRegion": "NSW",
+      "postalCode": "2010",
+      "addressCountry": "AU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -33.8821,
+      "longitude": 151.2155
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:30",
+        "closes": "17:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "10:00",
+        "closes": "16:00"
+      }
+    ],
+    "areaServed": ["Sydney", "New South Wales", "Australia", "International"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.92",
+      "reviewCount": "312"
+    }
+  }
+  </script>
 </head>
 <body>
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;" aria-hidden="true">
   <symbol id="icon-sock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M7 3h7v8l4 4a4 4 0 0 1-5.66 5.66l-5.34-5.34V3z"></path>
     <path d="M7 8h7"></path>
@@ -86,7 +163,7 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container">
-      <nav class="navbar">
+      <nav class="navbar" aria-label="Primary navigation">
         <a href="index.html" class="brand-logo">
           <img src="assets/svgs/logo.svg" alt="Sydney Sock Co" height="46">
         </a>
@@ -100,10 +177,10 @@
         </ul>
         <div class="nav-actions">
           <select id="currency-select" class="currency-select" title="Change currency">
-            <option value="AUD">AUD ($)</option>
-            <option value="USD">USD ($)</option>
-            <option value="EUR">EUR (&euro;)</option>
-            <option value="GBP">GBP (&pound;)</option>
+            <option value="AUD">AUD $</option>
+            <option value="USD">USD $</option>
+            <option value="EUR">EUR &euro;</option>
+            <option value="GBP">GBP &pound;</option>
           </select>
           <button id="cart-trigger" class="cart-btn" title="View Cart">
             <svg class="icon" style="width:20px;height:20px;"><use href="#icon-cart"></use></svg>
@@ -113,6 +190,8 @@
       </nav>
     </div>
   </header>
+
+  <main id="main-content">
 
   <!-- Hero Section -->
   <section id="hero" class="hero">
@@ -154,17 +233,17 @@
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; align-items: center;">
         <div>
           <span class="section-tag">Ethical Provenance</span>
-          <h2 class="section-title" style="text-align: left; margin-top: 0.5rem;">From Sunlit NSW Pastures to Precision Circular Knitting</h2>
+          <h2 class="section-title" style="text-align: left; margin-top: 0.5rem;">From sunlit pastures to circular knitting</h2>
           <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.5rem;">
             We trace every spool of yarn directly to certified non-mulesed Merino sheep farms across regional New South Wales. The raw wool is scoured in closed-loop systems, spun to fine 19.5-micron threads, and knit on 200-needle Italian machinery for an imperceptible toe seam.
           </p>
           <div style="display: flex; gap: 1.5rem;">
             <div style="flex: 1; border-left: 3px solid var(--primary); padding-left: 1rem;">
-              <h4 style="font-size: 1.1rem; color: var(--text-main);">Zero Mulesing Wool</h4>
+              <h4 style="font-size: 1.1rem; color: var(--text-main);">Zero mulesing wool</h4>
               <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 4px;">Audited welfare standards across ethical Australian grazing properties.</p>
             </div>
             <div style="flex: 1; border-left: 3px solid var(--accent); padding-left: 1rem;">
-              <h4 style="font-size: 1.1rem; color: var(--text-main);">200-Needle Density</h4>
+              <h4 style="font-size: 1.1rem; color: var(--text-main);">200-needle density</h4>
               <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 4px;">Dense, cushioned knit with hand-linked seamless toes.</p>
             </div>
           </div>
@@ -192,7 +271,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Sydney Favorites</span>
-        <h2 class="section-title">Iconic Aussie Pairs Ready for Any Terrain</h2>
+        <h2 class="section-title">Australian pairs ready for any terrain</h2>
         <p class="section-subtitle">
           Designed in Surry Hills and tested on the coastal cliffs of Bondi, mountain trails of the Blue Mountains, and boardroom floors of Martin Place.
         </p>
@@ -210,7 +289,7 @@
           </div>
           <div class="sock-card-body">
             <span class="sock-category">Botanical & Wildlife</span>
-            <h3 class="sock-title">The Koala Canopy Crew</h3>
+            <h3 class="sock-title">The Koala Canopy crew</h3>
             <p class="sock-desc">Ultra-soft antibacterial combed bamboo featuring sleeping sleepy koalas amongst native gum leaves.</p>
             <div class="sock-card-footer">
               <span class="sock-price">$18.00 AUD</span>
@@ -230,7 +309,7 @@
           </div>
           <div class="sock-card-body">
             <span class="sock-category">Fine Merino Wool</span>
-            <h3 class="sock-title">Sydney Harbour Sunset Gradient</h3>
+            <h3 class="sock-title">Sydney Harbour sunset gradient</h3>
             <p class="sock-desc">Fine 19.5-micron non-mulesed Australian Merino wool reflecting golden hour reflections across the harbour.</p>
             <div class="sock-card-footer">
               <span class="sock-price">$22.50 AUD</span>
@@ -250,7 +329,7 @@
           </div>
           <div class="sock-card-body">
             <span class="sock-category">Athletic & Trail</span>
-            <h3 class="sock-title">Bondi Coastal Trail Cushion</h3>
+            <h3 class="sock-title">Bondi coastal trail cushion</h3>
             <p class="sock-desc">Reinforced heel and toe padding with dynamic arch support for the scenic Bondi to Coogee walk.</p>
             <div class="sock-card-footer">
               <span class="sock-price">$24.00 AUD</span>
@@ -270,7 +349,7 @@
           </div>
           <div class="sock-card-body">
             <span class="sock-category">Heavy Boot & Work</span>
-            <h3 class="sock-title">Red Earth Kangaroo Boot Sock</h3>
+            <h3 class="sock-title">Red Earth kangaroo boot sock</h3>
             <p class="sock-desc">Thermal insulating loop-knit Merino sock designed for Blundstones, Redbacks, and rugged Australian conditions.</p>
             <div class="sock-card-footer">
               <span class="sock-price">$26.00 AUD</span>
@@ -352,6 +431,8 @@
   </section>
 
   <!-- Footer -->
+  </main>
+
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -375,7 +456,7 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Giving Mission</h4>
+          <h4>Giving mission</h4>
           <ul class="footer-links">
             <li><a href="about.html#impact">Sydney Shelter Partnership</a></li>
             <li><a href="about.html#merino">Non-Mulesed Australian Merino</a></li>
@@ -387,7 +468,7 @@
           <h4>Sydney Store & Studio</h4>
           <ul class="footer-links">
             <li><span style="font-size:0.85rem;">42 Crown St, Surry Hills NSW 2010</span></li>
-            <li><span style="font-size:0.85rem;">Mon - Sat: 9:30 AM &ndash; 5:30 PM</span></li>
+            <li><span style="font-size:0.85rem;">Mon - Sat: 9:30 AM  to  5:30 PM</span></li>
             <li><span style="font-size:0.85rem;">Email: hello@sydneysockco.com.au</span></li>
             <li><span style="font-size:0.85rem;">ABN: 48 620 914 832</span></li>
           </ul>
@@ -458,24 +539,24 @@
       <tbody>
         <tr style="border-bottom: 1px solid var(--border-color);">
           <td style="padding: 0.75rem; font-weight: 700;">S / M</td>
-          <td style="padding: 0.75rem;">4 &ndash; 8</td>
-          <td style="padding: 0.75rem;">5 &ndash; 8.5</td>
-          <td style="padding: 0.75rem;">6 &ndash; 9.5</td>
-          <td style="padding: 0.75rem;">36 &ndash; 41</td>
+          <td style="padding: 0.75rem;">4  to  8</td>
+          <td style="padding: 0.75rem;">5  to  8.5</td>
+          <td style="padding: 0.75rem;">6  to  9.5</td>
+          <td style="padding: 0.75rem;">36  to  41</td>
         </tr>
         <tr style="border-bottom: 1px solid var(--border-color);">
           <td style="padding: 0.75rem; font-weight: 700;">M / L</td>
-          <td style="padding: 0.75rem;">8 &ndash; 11.5</td>
-          <td style="padding: 0.75rem;">9 &ndash; 12.5</td>
-          <td style="padding: 0.75rem;">10 &ndash; 13.5</td>
-          <td style="padding: 0.75rem;">42 &ndash; 46</td>
+          <td style="padding: 0.75rem;">8  to  11.5</td>
+          <td style="padding: 0.75rem;">9  to  12.5</td>
+          <td style="padding: 0.75rem;">10  to  13.5</td>
+          <td style="padding: 0.75rem;">42  to  46</td>
         </tr>
         <tr>
           <td style="padding: 0.75rem; font-weight: 700;">XL</td>
-          <td style="padding: 0.75rem;">12 &ndash; 15</td>
-          <td style="padding: 0.75rem;">13 &ndash; 16</td>
+          <td style="padding: 0.75rem;">12  to  15</td>
+          <td style="padding: 0.75rem;">13  to  16</td>
           <td style="padding: 0.75rem;">14+</td>
-          <td style="padding: 0.75rem;">47 &ndash; 50</td>
+          <td style="padding: 0.75rem;">47  to  50</td>
         </tr>
       </tbody>
     </table>
