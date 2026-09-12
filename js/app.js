@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="sock-img-box">
             <span class="sock-material-badge">${sock.material}</span>
             <span class="sock-impact-pill">
-              <svg class="icon" style="color:#F43F5E; width:14px; height:14px;"><use href="assets/svgs/icons.svg#icon-heart"></use></svg>
+              <svg class="icon" style="color:#F43F5E; width:14px; height:14px;"><use href="#icon-heart"></use></svg>
               ${sock.impact}
             </span>
             <img src="assets/images/${sock.image}" alt="${sock.title}" class="sock-card-img" loading="lazy">
